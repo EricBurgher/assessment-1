@@ -7,9 +7,8 @@ def optimal_change(item_cost, amount_paid):
 
     change = 0
     for x in denomination:
-        while item_cost >= denomination:
-            item_cost = item_cost - denomination
-            change = change + 1
+        while amount_paid >= item_cost:
+            change = amount_paid - item_cost
 
     optimal_change(66.66, 80)
 
